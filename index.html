@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen Negara - Rahasia & Terbatas</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #090d16;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="text-slate-100 min-h-screen flex items-center justify-center p-4">
+
+    <!-- AUDIO ELEMEN -->
+    <audio id="mars-audio" src="indonesia-raya.mp3" preload="auto"></audio>
+
+    <!-- TAHAP 1: HALAMAN SAMPUL KENEGARAAN -->
+    <div id="cover-section" class="max-w-md w-full bg-slate-900/90 backdrop-blur-md border border-slate-800 rounded-2xl shadow-2xl p-8 text-center space-y-6 transition-all duration-500">
+        <div class="inline-block bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-amber-500/20">
+            KLASIFIKASI: RAHASIA NEGARA
+        </div>
+        
+        <div class="space-y-2">
+            <h1 class="text-xl font-bold tracking-tight text-slate-100">KANTOR SEKRETARIAT NEGARA URUSAN MENDADAK</h1>
+            <p class="text-xs text-slate-400">Jl. Beban Pikiran No. 001, Jakarta Pusat</p>
+        </div>
+
+        <div class="border-y border-slate-800 py-4 my-2 text-sm text-slate-300 space-y-1">
+            <p class="font-semibold">PERIHAL: SURAT PANGGILAN PAKSA</p>
+            <p class="text-xs text-slate-400">Dokumen ini dilindungi undang-undang rasa jenuh dan wajib dibuka oleh pihak bersangkutan.</p>
+        </div>
+
+        <button onclick="bukaDokumen()" class="w-full bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold py-3.5 px-4 rounded-xl transition-all shadow-lg shadow-amber-600/20 text-sm flex items-center justify-center gap-2 cursor-pointer">
+            <span>🔊 Putar Mars Kebangsaan & Buka Dokumen</span>
+        </button>
+        
+        <p class="text-[10px] text-slate-500 italic">*Disarankan menyalakan volume perangkat untuk kekhidmatan paripurna.</p>
+    </div>
+
+
+    <!-- TAHAP 2: ISI UNDANGAN UTAMA -->
+    <div id="content-section" class="hidden max-w-md w-full bg-slate-900/90 backdrop-blur-md border border-slate-800 rounded-2xl shadow-2xl p-6 md:p-8 relative overflow-hidden transition-all duration-500">
+        
+        <!-- Header Surat -->
+        <div class="text-center border-b border-slate-800 pb-5 mb-5">
+            <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Undangan Resmi Kenegaraan</span>
+            <h2 class="text-lg md:text-xl font-bold mt-3 text-slate-100">Sidang Khusus Penggembosan Kepala & Oksigenasi Otak</h2>
+            <p class="text-xs text-slate-400 mt-1">Nomor: 001/TAMAN-KOTA/XI/2026</p>
+        </div>
+
+        <!-- Isi Surat -->
+        <div class="space-y-4 text-sm text-slate-300">
+            <p>Kepada Yth. <strong>Incess</strong>,</p>
+            <p>Menimbang tingkat kejenuhan harian yang kian meroket dan akumulasi kelelahan tingkat dewa, maka dengan ini Badan Pengurus Pusat Kewarasan Mental memanggil Saudari untuk menghadiri agenda wajib:</p>
+            
+            <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800 space-y-2 text-xs">
+                <div class="flex justify-between">
+                    <span class="text-slate-400">📅 Waktu:</span>
+                    <span class="font-medium text-slate-200">Malam ini / Selesai kerja</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">📍 Lokasi:</span>
+                    <span class="font-medium text-slate-200">Taman Kota (Area Bebas Beban)</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400">🎯 Agenda:</span>
+                    <span class="font-medium text-slate-200">Duduk bengong & ngadem</span>
+                </div>
+            </div>
+
+            <p class="text-[11px] text-slate-400 italic text-center">Catatan: Dilarang membawa beban pekerjaan. Harap siapkan jaket atau pakaian senyaman mungkin.</p>
+            
+            <!-- PESAN TULUS DARI LU (DI BAWAH SURAT) -->
+            <div class="bg-slate-950/60 border border-slate-800/80 p-4 rounded-xl text-xs text-slate-300 leading-relaxed italic space-y-2 mt-4">
+                <p>“Aku tau kamu cape, aku tau kamu badmood, dan aku ngebuat ini semua bukan berarti kamu harus nerima ajakan aku ya.</p>
+                <p>Ini semua aku lakuin karna aku care sama kamu, jadi kalo kamu mau menolak pun aku pasti terima-terima aja. Jadi sebelum kamu pilih mau terima atau engga, *take your time* ya buat pikirin.</p>
+                <p class="font-medium text-amber-400/90 not-italic pt-1">Apapun pilihan yang kamu ambil, aku akan selalu sayang sama kamu.”</p>
+            </div>
+        </div>
+
+        <!-- Tombol Aksi (RSVP) -->
+        <div id="action-section" class="mt-6 space-y-3">
+            <button onclick="handleAccept()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl transition-all shadow-lg shadow-emerald-600/20 text-center block text-sm cursor-pointer">
+                ✨ Siap, Hadir Dong!
+            </button>
+            <button id="btn-reject" onmouseover="moveButton()" onclick="handleReject()" class="w-full bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold py-3 px-4 rounded-xl transition-all text-center text-sm cursor-pointer">
+                Mager / Mau Nolak
+            </button>
+        </div>
+
+        <!-- Hidden Response Box -->
+        <div id="success-box" class="hidden mt-6 bg-emerald-950/40 border border-emerald-500/30 rounded-xl p-4 text-center space-y-3">
+            <p class="text-emerald-400 font-semibold text-xs">Konfirmasi diterima! Silakan klik tombol di bawah untuk mengirim laporan resmi ke chat.</p>
+            <a id="wa-link" href="#" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs inline-block shadow-md">
+                Kirim Konfirmasi ke Chat 🚀
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-8 text-center text-[10px] text-slate-500 border-t border-slate-800 pt-4">
+            Direktorat Utama Tukang Nyari Angin • Resmi & Terpercaya
+        </div>
+
+    </div>
+
+    <script>
+        function bukaDokumen() {
+            const audio = document.getElementById('mars-audio');
+            audio.play().catch(error => {
+                console.log("Audio diblokir atau file tidak ditemukan:", error);
+            });
+
+            document.getElementById('cover-section').classList.add('hidden');
+            document.getElementById('content-section').classList.remove('hidden');
+        }
+
+        function moveButton() {
+            const btn = document.getElementById('btn-reject');
+            const randomX = (Math.random() - 0.5) * 100;
+            const randomY = (Math.random() - 0.5) * 50;
+            btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+
+        function handleReject() {
+            alert("Kalo mau nolak langsung dichat aja ya incess 😜");
+        }
+
+        function handleAccept() {
+            document.getElementById('action-section').classList.add('hidden');
+            document.getElementById('success-box').classList.remove('hidden');
+            
+            // Ganti 62895xxxxxxxx dengan nomor WhatsApp lu (tanpa angka 0 di depan)
+            const noWa = "62895xxxxxxxx"; 
+            const pesan = encodeURIComponent("Halo, surat tugas kenegaraannya sudah dibaca sampai habis. Siap hadir buat cari angin! 😎");
+            
+            document.getElementById('wa-link').href = `https://wa.me/${noWa}?text=${pesan}`;
+        }
+    </script>
+</body>
+</html>

@@ -19,7 +19,7 @@
 </head>
 <body class="text-slate-100 min-h-screen flex items-center justify-center p-4">
 
-    <!-- AUDIO ELEMEN (Sudah disesuaikan ke lagu.mp3) -->
+    <!-- AUDIO ELEMEN -->
     <audio id="mars-audio" src="lagu.mp3" preload="auto"></audio>
 
     <!-- TAHAP 1: HALAMAN SAMPUL KENEGARAAN -->
@@ -64,7 +64,7 @@
             <div class="bg-slate-950/80 p-4 rounded-xl border border-slate-800 space-y-2 text-xs">
                 <div class="flex justify-between">
                     <span class="text-slate-400">📅 Waktu:</span>
-                    <span class="font-medium text-slate-200">Malam ini / Selesai kerja</span>
+                    <span class="font-medium text-slate-200">Malam ini - Incesss puas</span>
                 </div>
                 <div class="flex justify-between">
                     <span class="text-slate-400">📍 Lokasi:</span>
@@ -137,7 +137,6 @@
             document.getElementById('action-section').classList.add('hidden');
             document.getElementById('success-box').classList.remove('hidden');
             
-            // Ganti 62895xxxxxxxx dengan nomor WhatsApp lu (tanpa angka 0 di depan)
             const noWa = "6285945757804"; 
             const pesan = encodeURIComponent("Halo, surat tugas kenegaraannya sudah dibaca sampai habis. Siap hadir buat cari angin! 😎");
             
